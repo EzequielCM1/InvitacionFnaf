@@ -1,0 +1,134 @@
+/* estilos.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Creepster', cursive, Arial, sans-serif; /* tipografía terror */
+    background-image: url('./img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    color: #ff0000;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #000;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15rem;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+    width: 300px;
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+label {
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    background-color: #111;
+    color: #f5f5f5;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #ff9999;
+}
+
+button {
+    padding: 10px;
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0000;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* ERRORES */
+.error {
+    color: #ff3333;
+    font-size: 0.9rem;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding-left: 0;
+    width: 300px;
+}
+
+ul li {
+    background-color: rgba(50,0,0,0.8);
+    color: #ffcccc;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 5px #ff0000 inset;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ff4d4d;
+    text-shadow: 0 0 5px #ff0000;
+}
