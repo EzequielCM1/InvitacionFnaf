@@ -132,3 +132,31 @@ footer {
     color: #ff4d4d;
     text-shadow: 0 0 5px #ff0000;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    form,
+    ul {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
